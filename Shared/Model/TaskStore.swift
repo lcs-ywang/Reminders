@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Taskstore: ObservableObject{
+class TaskStore: ObservableObject{
     @Published var tasks: [Task]
     
     init(tasks: [Task] = []){
@@ -16,4 +16,4 @@ class Taskstore: ObservableObject{
     
 }
 
-let testStore = Taskstore(tasks: testData)
+let testStore = TaskStore(tasks: testData)

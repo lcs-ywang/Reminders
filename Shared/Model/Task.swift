@@ -7,11 +7,19 @@
 
 import Foundation
 
-struct Task: Identifiable {
+class Task: Identifiable,ObservableObject {
     var id = UUID()
     var description: String
     var priority: TaskPriority
-    var completed: Bool
+    @Published var completed: Bool
+    
+    
+    internal init(id: UUID = UUID(), description: String, priority: TaskPriority, completed: Bool){
+        self.id = id
+        self.description = description
+        self.priority = priority
+        self.completed = completed
+    }
     
     
     
@@ -19,7 +27,7 @@ struct Task: Identifiable {
 }
 
 let testData = [
-    Task (description: "grow taller", priority:.high, completed: true)
+    Task(description: "grow taller", priority:.high, completed: true)
  
 
 ]
