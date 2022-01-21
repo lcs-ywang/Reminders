@@ -16,6 +16,7 @@ struct ContentView: View {
             TaskCell(task: task)
           
         }
+        .navigationTitle("Reminders")
          
     }
 }
