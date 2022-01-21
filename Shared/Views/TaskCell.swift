@@ -30,7 +30,7 @@ struct TaskCell: View {
     
     var body: some View {
         HStack{
-            Image(systemName: task.completed ? "checkmarl.circlec.fill" : "circle")
+            Image(systemName: task.completed ? "checkmark.circlec.fill" : "circle")
                 .onTapGesture {
                     task.completed.toggle()
                 }
