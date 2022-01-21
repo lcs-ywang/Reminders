@@ -9,7 +9,24 @@ import SwiftUI
 
 struct TaskCell: View {
     
-    var task: Task
+    
+    
+    
+   @ObservedObject var task: Task
+    
+    var taskColour: Color {
+        
+        switch task.priority {
+        case .high:
+            return Color.red
+        case .medium:
+            return Color.blue
+        case.low:
+            return Color.primary
+        default:
+            return Color.primary
+        }
+    }
     
     var body: some View {
         HStack{
@@ -17,7 +34,9 @@ struct TaskCell: View {
                 .onTapGesture {
                     task.completed.toggle()
                 }
+            Text(task.description)
         }
+        .foregroundColor(self.taskColour)
     }
 }
 
