@@ -40,7 +40,13 @@ struct AddTask: View {
                          saveTask()
                     }
                 }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") {
+                        showing = false
+                    }
+                }
             }
+            
         }
         
     }
@@ -48,7 +54,9 @@ struct AddTask: View {
     func saveTask(){
         
         
-        store.tasks.append(Task(description: description, priority: priority, completed: false 
+        store.tasks.append(Task(description: description,
+                                priority: priority,
+                                completed: false
         ))
         
         showing = false
