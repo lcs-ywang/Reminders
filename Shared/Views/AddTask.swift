@@ -48,8 +48,11 @@ struct AddTask: View {
             }
             
         }
+        .interactiveDismissDisabled()
         
     }
+    
+    
     
     func saveTask(){
         
