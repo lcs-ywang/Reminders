@@ -23,8 +23,7 @@ struct TaskCell: View {
             return Color.blue
         case.low:
             return Color.primary
-        default:
-            return Color.primary
+        
         }
     }
     

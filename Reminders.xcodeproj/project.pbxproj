@@ -34,7 +34,7 @@
 		3C2C56792799C327001ADC62 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		3C2C568A2799C4F2001ADC62 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3C2C568C2799C562001ADC62 /* TaskPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPriority.swift; sourceTree = "<group>"; };
-		3C2C568E2799C605001ADC62 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		3C2C568E2799C605001ADC62 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskStore.swift; path = ../Model/TaskStore.swift; sourceTree = "<group>"; };
 		3C2C56932799D148001ADC62 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		3C2C5696279A3CF7001ADC62 /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3C2C566A2799C303001ADC62 /* RemindersApp.swift */,
+				3CA124E127A036F4002ED8A0 /* ViewModels */,
 				3C2C56892799C475001ADC62 /* Model */,
 				3C2C56882799C464001ADC62 /* Views */,
 				3C2C566C2799C326001ADC62 /* Assets.xcassets */,
@@ -109,9 +110,16 @@
 			children = (
 				3C2C568A2799C4F2001ADC62 /* Task.swift */,
 				3C2C568C2799C562001ADC62 /* TaskPriority.swift */,
-				3C2C568E2799C605001ADC62 /* TaskStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3CA124E127A036F4002ED8A0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C568E2799C605001ADC62 /* TaskStore.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
