@@ -14,6 +14,12 @@ class TaskStore: ObservableObject{
         self.tasks = tasks
     }
     
+    func deleteItems(at offsets: IndexSet){
+        
+        tasks.remove(atOffsets: offsets)
+        
+    }
+    
 }
 
 let testStore = TaskStore(tasks: testData)
