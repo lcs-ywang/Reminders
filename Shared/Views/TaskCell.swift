@@ -9,10 +9,9 @@ import SwiftUI
 
 struct TaskCell: View {
     
-    
-    
-    
    @ObservedObject var task: Task
+    
+    @Binding var triggerListUpdate: Bool
     
     var taskColour: Color {
         
@@ -32,6 +31,10 @@ struct TaskCell: View {
             Image(systemName: task.completed ? "checkmark.circle.fill" : "circle")
                 .onTapGesture {
                     task.completed.toggle()
+                    
+                    withAnimation{
+                        triggerListUpdate.toggle() 
+                    }
                 }
             Text(task.description)
         }
@@ -41,7 +44,7 @@ struct TaskCell: View {
 
 struct TaskCell_Previews: PreviewProvider {
     static var previews: some View {
-        TaskCell(task: testData[0])
-        TaskCell(task: testData[1])
+        TaskCell(task: testData[0], triggerListUpdate: .constant(true))
+        TaskCell(task: testData[1], triggerListUpdate: .constant(true))
     }
 }
