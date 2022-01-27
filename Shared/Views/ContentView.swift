@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View { 
     
    
     @ObservedObject var store: TaskStore
@@ -47,17 +47,33 @@ struct ContentView: View {
                 ForEach(store.tasks){task in
                     
                     if showingCompletedTasks {
-                        
-                        TaskCell(task: task, triggerListUpdate: .constant(true))
+                        if selectedPriorityForVisibleTasks == .all {
+                            
+                            TaskCell(task: task, triggerListUpdate: .constant(true))
+                            
+                        } else {
+                            if task.priority.rawValue == selectedPriorityForVisibleTasks.rawValue{
+                                TaskCell(task: task, triggerListUpdate: .constant(true))
+                            }
+                        }
                         
                     }else{
+                        
                         if task.completed == false {
-                            TaskCell(task: task, triggerListUpdate: $listShouldUpdate)
+                            
+                            if selectedPriorityForVisibleTasks == .all {
+                                
+                                TaskCell(task: task, triggerListUpdate: $listShouldUpdate )
+                                
+                            } else {
+                                if task.priority.rawValue == selectedPriorityForVisibleTasks.rawValue{
+                                    TaskCell(task: task, triggerListUpdate: $listShouldUpdate )
+                                    
+                                }
+                            }
                         }
                     }
                     
-                       
-                  
                 }
                 .onDelete(perform: store.deleteItems)
                 .onMove(perform: store.moveItems)
