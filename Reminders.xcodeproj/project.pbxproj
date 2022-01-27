@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C01D1CA27A2331300EF6BC5 /* VisibleTaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01D1C927A2331300EF6BC5 /* VisibleTaskPriority.swift */; };
+		3C01D1CB27A2331300EF6BC5 /* VisibleTaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01D1C927A2331300EF6BC5 /* VisibleTaskPriority.swift */; };
 		3C2C567A2799C327001ADC62 /* RemindersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C566A2799C303001ADC62 /* RemindersApp.swift */; };
 		3C2C567B2799C327001ADC62 /* RemindersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C566A2799C303001ADC62 /* RemindersApp.swift */; };
 		3C2C567C2799C327001ADC62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C566B2799C303001ADC62 /* ContentView.swift */; };
@@ -26,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C01D1C927A2331300EF6BC5 /* VisibleTaskPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleTaskPriority.swift; sourceTree = "<group>"; };
 		3C2C566A2799C303001ADC62 /* RemindersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersApp.swift; sourceTree = "<group>"; };
 		3C2C566B2799C303001ADC62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C2C566C2799C326001ADC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 			children = (
 				3C2C568A2799C4F2001ADC62 /* Task.swift */,
 				3C2C568C2799C562001ADC62 /* TaskPriority.swift */,
+				3C01D1C927A2331300EF6BC5 /* VisibleTaskPriority.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +231,7 @@
 				3C2C56942799D148001ADC62 /* TaskCell.swift in Sources */,
 				3C2C5697279A3CF7001ADC62 /* AddTask.swift in Sources */,
 				3C2C567A2799C327001ADC62 /* RemindersApp.swift in Sources */,
+				3C01D1CA27A2331300EF6BC5 /* VisibleTaskPriority.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +246,7 @@
 				3C2C56952799D148001ADC62 /* TaskCell.swift in Sources */,
 				3C2C5698279A3CF7001ADC62 /* AddTask.swift in Sources */,
 				3C2C567B2799C327001ADC62 /* RemindersApp.swift in Sources */,
+				3C01D1CB27A2331300EF6BC5 /* VisibleTaskPriority.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
